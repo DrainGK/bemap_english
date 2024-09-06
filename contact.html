@@ -14,20 +14,20 @@
     <header>
         <nav>
             <div class="nav-container">
-                <img src="./assets/bemap_logo.png" alt="bemap_logo" width="159" height="69">
+                <a href="/index.html"><img src="./assets/bemap_logo.png" alt="bemap_logo" width="159" height="69"></a>
                 <ul class="menu-container">
-                    <li>services</li>
-                    <li>about</li>
-                    <li>investors relationship</li>
+                    <li><a href="/services.html">services</a></li>
+                    <li><a href="/about.html">about</a></li>
+                    <li><a href="/ir.html">Investors Relationship</a></li>
                     <div class="button-container-mobile">
-                        <button class="contact-button">contact</button>
-                        <button class="language-button">日本語</button>
+                        <button class="contact-button"><a href="/contact.html">contact</a></button>
+                        <button class="language-button"><a href="https://www.bemap.co.jp/">日本語</a></button>
                     </div>
                 </ul>
     
                 <div class="button-container">
-                    <button class="contact-button">contact</button>
-                    <button class="language-button">日本語</button>
+                    <button class="contact-button"><a href="/contact.html">contact</a></button>
+                        <button class="language-button"><a href="https://www.bemap.co.jp/">日本語</a></button>
                 </div>
                 <div class="menu-icon">
                     <img id="menu-open" class="menu " src="./assets/menu_open.svg" alt="menu icon" height="40" width="40">
@@ -73,16 +73,23 @@
             <div class="inquiry-category-container">
                 <p>Choose category for your inquiry*</p>
                 <div class="radio-buttons-container">
-                    <input type="radio" id="contactChoice1" name="contact" value="investors relation">
-                    <label for="contactChoice1">Investors Relation</label>
-          
-                    <input type="radio" id="contactChoice2" name="contact" value="services and products of bemap">
-                    <label for="contactChoice2">Services and Products of BeMap</label>
-          
-                    <input type="radio" id="contactChoice3" name="contact" value="carrier">
-                    <label for="contactChoice3">Carrier</label>
-                    <input type="radio" id="contactChoice4" name="contact" value="others">
-                    <label for="contactChoice4">Others</label>
+                    <div>
+                        <input type="radio" id="contactChoice1" name="contact" value="investors relation">
+                        <label for="contactChoice1">Investors Relation</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contactChoice2" name="contact" value="services and products of bemap">
+                        <label for="contactChoice2">Services and Products of BeMap</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contactChoice3" name="contact" value="carrier">
+                        <label for="contactChoice3">Carrier</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contactChoice4" name="contact" value="others">
+                        <label for="contactChoice4">Others</label>
+                    </div>
+                    
                 </div>
             </div>
             <div class="inquiry-textarea-container">
@@ -90,8 +97,34 @@
                 <textarea id="inquiry-text"></textarea>
             </div>
             <div class="privacy-policy-container">
-                <p>Privacy Policy*</p>
-                <textarea id="privacy-policy"></textarea>
+                <p class="privacy-policy">Privacy Policy*</p>
+                <p id="privacy-policy">
+                    BeMap, Inc.(hereinafter referred to as “BeMap”) handles personal information the following manner.<br>
+
+                    ＜Company Name＞<br>
+                    BeMap, Inc.<br>
+                    ＜Personal Information Management Representative＞ <br>
+                    Manager of Business Management, BeMap<br>
+                    ＜USE＞<br>
+                    We use the information we collect to understand your inquiry and request correctly and to provide the products and services you request.<br>
+                    ＜Information Sharing＞<br>
+                    Except as described in this privacy statement, we won’t disclose your personal information to a third party without your consent.
+                    BeMap may share or disclose personal information:
+                    ・With vendors or agents. Specifically, we may share it with companies we've hired to provide services on our behalf. When we share information with these other companies to provide services for us, they are not allowed to use it for any other purpose and must keep it confidential.
+                    ・To comply with the law or respond to legal process or lawful request.<br>
+                    ＜Disclosure of Personal Information＞<br>
+                    We will respond without delay to requests from a customer for disclosure of relevant personal information. For inquiries about personal information disclosure, contact us at the following way.
+
+                    <br>[Personal Information Disclosure Consultation Contact]<br>
+                    <br>Business Management, Bemap, Inc.<br>
+                    <br>Tel: +81-3-5297-2181<br>
+                    <br>[10:00-12:00 13:00-18:00 Every Business Day]
+
+                    <br>＜Notice for Providing Personal Information＞<br>
+                    Unrequired information is optional. Please be aware that all items are not provided, we cannot answer all of your requests.<br>
+                    ＜Acquisition of personal information by a way that you cannot be aware of its acquisition＞<br>
+                    We do not collect personal information with a way that you cannot be easily aware of its acquisition like cookie and other similar technologies to store and read data files on your computer.
+                </p>
             </div>
             <div class="agreement-container">
                 <input type="checkbox" id="agreement" required>
