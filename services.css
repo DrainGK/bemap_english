@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: inter;
+    outline: none;
+    border: none;
+}
+
+:root{
+    --light: white;
+    --dark: black;
+    --secondary: #E6E6E6;
+    --primary: #4A659D;
+    --header: #D9E5FF;
+    --accent: #9F7927;
+}
+
+/*------Header------*/
+
+header{
+    padding: 0;
+    background-color: var(--header);
+
+}
+
+.header-title{
+    margin-top: 153px;
+    padding: 3rem 0;
+    width: 100%;
+    height: calc(60vh - 6rem);
+    background-color: var(--header);
+}
+
+.header-title  h2 {
+    color: var(--accent);
+    margin: 5rem auto;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.header-title  h2  strong{
+    font-size: 64px;
+    margin-right: 1rem;
+}
+
+.header-title p{
+    max-width: 921px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-title  h2  strong{
+        font-size: 32px;
+        margin-right: 1rem;
+    }
+
+    .header-title  h2{
+        font-size: 1rem;
+    }
+    .header-title  p{
+        font-size: 0.75rem;
+        line-height: 30px;
+
+    }
+
+    
+}
+@media only screen and (max-width: 768px) {
+
+    .header-title{
+        margin-top: 153px;
+        padding: 3rem 0;
+        width: 90%;
+        height: fit-content;
+        margin: 75px auto;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+}
+
+/*------solutions------*/
+
+section{
+    width: 90%;
+}
+
+#solutions{
+    width: 90%;
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    width: 45%;
+}
+
+.card{
+    max-width: 466px;
+    width: 100%;
+    height: fit-content;
+    /* min-height: 392px; */
+    /* max-height: 200px; */
+    border-radius: 25px ;
+    box-sizing: border-box;
+    background-color: var(--light);
+
+}
+
+.card li{
+    font-size: 1.25rem;
+}
+
+.card-top-image{
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.infos-container{
+    width: 90%;
+    height: 100%;
+    min-height: 152px;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+.card button{
+    color: var(--light);
+    background-color: var(--accent);
+    font-weight: 200;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+    gap: 0 2rem;
+    border-radius: 50px;
+}
+
+.card button::after{
+    content: none;
+}
+
+
+
+#solutions div{
+    max-width: 1150px;
+}
+
+#solutions h3{
+    max-width: 500px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#solutions p{
+    max-width: 500px;
+    font-size: 1.25rem;
+}
+
+.mobility-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.mobility-left{
+    width: 50%;
+    max-width: 500px;
+    gap: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 4rem;
+
+}
+
+.wireless-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.wireless-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    width: 50%;
+    max-width: 500px;
+    gap: 1rem 0;
+    margin-bottom: 4rem;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    #solutions h3{
+        font-size: 1.5rem;
+    }
+    
+    #solutions p{
+        font-size: 1rem;
+    }
+
+
+
+    .infos-container, .card li{
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .wireless-container, .mobility-container{
+        display: block;
+    }
+
+    .wireless-right, .mobility-left{
+        width: 100%;
+    }
+
+    .card-container{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .card-container{
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/*-----enterprise------*/
+
+#enterprise{
+    width: 100%;
+    height: fit-content;
+    max-width: none;
+    background-color: var(--header);
+    background-image: url(/assets/section_bg.svg);
+    background-size:cover ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    padding: 10rem 0;
+}
+
+.enterprise-container{
+    width: 90%;
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
+}
+
+.enterprise-container h3{
+    font-size: 2rem;
+}
+.enterprise-container p{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #enterprise{
+        padding: 5rem 0;
+    }
+
+    .enterprise-container h3{
+        font-size: 1.5rem;
+    }
+    .enterprise-container p{
+        font-size: 1rem;
+
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .enterprise-container h3{
+        font-size: 1.25rem;
+    }
+    .enterprise-container p{
+        font-size: 0.8rem;
+
+    }
+}
+@media only screen and (max-width: 480px) {
+}
+
+/*-----services-infos------*/
+
+#services-infos{
+    margin-bottom: 10rem;
+}
+
+.services-infos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.services-infos-container-left{
+    width: 50%;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.services-infos-container-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .services-infos-container-left{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+
+    #services-infos{
+        margin: 5rem auto;
+    }
+
+    .services-infos-container{
+        display: block;
+    }
+
+    .services-infos-container-left, .services-infos-container-right{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .services-infos-container-left{
+        text-align: center;
+        gap: 2rem 0;
+        margin-bottom: 2rem;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+
+    .services-infos-container-right img{
+        width: 100%;
+        height: auto;
+    }
+}

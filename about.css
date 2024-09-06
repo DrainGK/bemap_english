@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: inter;
+    outline: none;
+    border: none;
+}
+
+:root{
+    --light: white;
+    --dark: black;
+    --secondary: #E6E6E6;
+    --primary: #4A659D;
+    --header: #D9E5FF;
+    --accent: #9F7927;
+}
+
+/*------Vision------*/
+
+#vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision-strategy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 0;
+    margin: 0 auto;
+}
+
+.vision-strategy h3{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.vision-strategy p{
+    font-size: 1.25rem;
+    line-height: 44px;
+    text-align: center;
+}
+
+.business-infos{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;   
+    margin-top: 5rem;
+}
+
+.business-infos h3, .business-infos p{
+    width: 100%;
+}
+
+.business-infos-left, .business-infos-right{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 0;
+}
+
+    
+.business-infos-left .business-infos-container{
+    align-items: start;
+}
+.business-infos-right .business-infos-container{
+    align-items: end;
+}
+
+.business-infos-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.business-infos-left{
+    text-align: start;
+    background-color: var(--secondary);
+    border-radius: 0 15px 0 0;
+}
+
+.business-infos-right{
+    text-align: end;
+}
+
+@media only screen and (max-width: 1024px) {
+    .vision-strategy h3{
+        font-size: 3rem;
+    }
+
+    .vision-strategy p{
+        font-size: 1rem;
+        line-height: 30px;
+        width: 90%;
+    }
+
+    .business-infos-container{
+        width:80%;
+    }
+    
+    
+}
+@media only screen and (max-width: 768px) {
+    .vision-strategy h3{
+        font-size: 2rem;
+    }
+
+    .vision-strategy p{
+        width: 90%;
+        font-size: 0.8;
+        line-height: 30px;
+    }
+
+    .business-infos{
+        width: 100vw;
+        display: block;
+    }
+
+    .business-infos-left{
+       border-radius: 0;
+    }
+
+    .business-infos-left:nth-child()
+    
+    .business-infos-right{
+        align-items: end;
+    }
+    
+
+}
+@media only screen and (max-width: 480px) {
+}
+
+/*------Corporate information------*/
+
+
+
+#corporate-information{
+    width: 100%;
+    height: fit-content;
+    max-width: none;
+    background-color: var(--header);
+    background-image: url(/assets/section_bg.svg);
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    margin-top: 0;
+
+    position: relative;
+}
+
+.divider{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.corporate-container{
+    width: 100%;
+    max-width: 1050px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.corporate-container-title{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info-card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-card{
+    height: 424px;
+    width: 294px;
+    margin: 0.75rem auto;
+
+}
+
+.info-card h3{
+    background-color: var(--accent);
+    border-radius: 0 30px 0 0;
+    padding: 2rem 0;
+    padding-left: 1rem;
+    color: var(--light);
+}
+
+.card-info-container{
+    background-color: var(--light);
+    height: 296px;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.card-info-container strong{
+    color: black;
+}
+
+.card-info-container p{
+    font-weight: 200;
+    color: rgb(99, 99, 99);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.card-info-container p:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: #e6e6e634; 
+    bottom: -1.5rem;
+    z-index: 20;
+}
+
+@media only screen and (max-width: 1024px) {
+    .corporate-container-title{
+        font-size: 3rem;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .corporate-container-title{
+        font-size: 2rem;
+    }
+
+}
+
+/*------Company information------*/
+
+
+#company-infos{
+ margin: 0 auto;
+ margin-bottom: 5rem;
+ width: 1050;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.partners-phrase{
+    font-size: 1.25rem;
+    font-weight: 300;
+    display: block;
+    margin-top: 2rem;
+}
+
+.partners{
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    margin: 5rem;
+}
+
+.logos-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 30s slide infinite linear;
+}
+
+.logos-slide img{
+    margin: 0 1.25rem;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    } to {
+        transform: translateX(-100%);
+    }
+}
+
+.company-address{
+display: flex;
+width: 100%;
+}
+
+.company-address-left, .company-address-right{
+    width: 50%;
+}
+
+.company-address-left img{
+    width: 100%;
+}
+
+.company-address-right{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2rem 0;
+}
+
+.address{
+    width: 80%;
+    background-color: var(--secondary);
+    border-radius: 15px;
+    margin: 0 auto;
+
+}
+.address h3{
+    background-color: var(--accent);
+    color: var(--light);
+    padding: 1rem 0;
+    padding-left: 1rem;
+    border-radius: 15px;
+}
+.address-infos{
+    color: var(--dark);
+    padding: 1rem 0;
+    padding-left: 1rem;
+}
+.address-infos p{
+    padding: 0.2rem 0;
+}
+
+.address-explanation{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    align-items: start;
+    justify-content: start;
+    gap: 1rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .company-address{
+        display: block;
+    }
+
+    .company-address-left{
+        display: block;
+    }
+
+    .company-address-right, .company-address-left{
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .address-explanation, .address{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+
+    .partners-phrase{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
