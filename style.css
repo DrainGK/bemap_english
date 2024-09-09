@@ -87,7 +87,11 @@ ul{
     align-items: center;
     justify-content: space-around;
     font-size: 20px;
-    color: #737573;
+    color: #737573 !important;
+}
+
+ul a:visited{
+    color: #737573 !important;
 }
 
 nav a{
@@ -128,7 +132,9 @@ button:hover{
     padding: 0.5rem 2rem;
 }
 
-
+.contact-button a:visited, .language-button a:visited{
+    color: white !important;
+}
 
 .contact-button{
     background-color: var(--accent);

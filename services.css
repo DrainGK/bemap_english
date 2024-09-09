@@ -25,11 +25,14 @@ header{
 }
 
 .header-title{
+    margin: 0 auto;
     margin-top: 153px;
     padding: 3rem 0;
-    width: 100%;
+    width: 90%;
     height: calc(60vh - 6rem);
     background-color: var(--header);
+
+    position: relative;
 }
 
 .header-title  h2 {
@@ -53,6 +56,30 @@ header{
     text-align: center;
 }
 
+.rect_2{
+    position: absolute;
+    bottom: -15%;
+}
+
+.rect_fill_left_2 {
+    left: -5%;
+}
+
+.rect_border_left_2{
+    left: 2%;
+    bottom: -20%;
+    transform: rotate(45deg);
+}
+.rect_fill_right_2 {
+    right: -5%;
+    transform: rotate(45deg);
+}
+
+.rect_border_right_2{
+    right: 0;
+    bottom: -25%;
+}
+
 @media only screen and (max-width: 1024px) {
     .header-title  h2  strong{
         font-size: 32px;
@@ -72,6 +99,36 @@ header{
 }
 @media only screen and (max-width: 768px) {
 
+    .rect_2{
+        position: absolute;
+        bottom: -15%;
+        height: auto;
+    }
+    
+    .rect_fill_left_2 {
+        left: -5%;
+        width: 75px;
+    }
+    
+    .rect_border_left_2{
+        left: 2%;
+        bottom: -20%;
+        transform: rotate(45deg);
+        width: 50px;
+    }
+    .rect_fill_right_2 {
+        right: -5%;
+        transform: rotate(45deg);
+        width: 100px;
+
+    }
+    
+    .rect_border_right_2{
+        right: 0;
+        bottom: -25%;
+        width: 75px;
+        right: 10%;
+    }
     .header-title{
         margin-top: 153px;
         padding: 3rem 0;
@@ -315,6 +372,10 @@ section{
     display: flex;
     justify-content: center;
 
+}
+
+.infos-container button:hover > img{
+    animation: about-button-animate 0.3s linear;
 }
 
 .services-infos-container-left{
